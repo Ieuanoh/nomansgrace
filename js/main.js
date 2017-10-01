@@ -1,0 +1,9 @@
+
+
+(function($){
+
+
+  $('.tabs').tabslet();
+
+
+})( jQuery );

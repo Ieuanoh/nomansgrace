@@ -1,0 +1,183 @@
+/*
+
+
+Custom Styles for No Man's Grace - Only use if absolutely neccesary and styles
+can't be achieve with tachyons and custom modifiers - ie. background images.
+If you need the source files for tachyons - email me @ ieuan1@hotmail.co.uk
+
+
+*/
+
+html{
+
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+
+}
+
+/*=== Backgrounds ===*/
+
+
+#menus{
+
+  background-image: url("/wp-content/themes/NMG/assets/img/menu-bg.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+
+}
+
+#grid-bg-1{
+
+  background-image: url("/wp-content/themes/NMG/assets/img/nmg-grid-1.jpg");
+  background-size: cover;
+
+}
+
+#grid-bg-2{
+
+  background-image: url("/wp-content/themes/NMG/assets/img/nmg-grid-2.jpg");
+  background-size: cover;
+
+}
+
+
+/*==== Other Styles ====*/
+
+.map-container iframe{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 42rem !important;
+
+}
+
+/* Sticky Nav Styles - for Waypoints.js */
+
+.stuck{
+
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  box-shadow: -14px -8px 10px 3px;
+  z-index: 999;
+
+}
+
+/*
+.stuck img{
+
+  width:60%;
+  transition: 0.3s;
+
+}
+
+#main-nav img{
+
+  transition:0.3s;
+
+}
+*/
+
+@media(max-width:960px) {
+
+  .sticky-wrapper{
+    display:none!important;
+  }
+}
+
+/* Tabs Styles */
+
+.tabs .active a,
+.tabs a:hover {
+
+  text-decoration: underline;
+  color: #A47890;
+  font-weight: 500;
+
+}
+
+
+/* ===== Wordpress Conflicts =====*/
+
+/* Override Nav link colours - user agent styles were pulling through */
+
+#main-nav a{
+
+  color:#a47890;
+  text-decoration: none;
+
+}
+
+#main-nav .button a{
+  color:#fff!important;
+}
+
+#mobile-nav a{
+
+  color:#fff;
+  text-decoration: none;
+
+}
+
+
+#contact a {
+
+    color:#222222!important;
+}
+
+footer a,
+#about a{
+
+    color:#ffffff!important;
+}
+
+/* Make sure post thumbnails on listing page aren't scaling incorrectly */
+
+.blog .attachment-post-thumbnail {
+
+    height:auto!important;
+}
+
+/* Nested Styles for the Blog */
+
+.nested-header h1,
+.nested-header h2,
+.nested-header h3,
+.nested-header h4 {
+
+    font-family:Crimson Text,georgia,times,serif;
+    color: #a47890;
+}
+
+.nested-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* Nested Styles for the menu */
+
+
+.menu-header h1,
+.menu-header h2,
+.menu-header h3{
+
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 500;
+
+}
+
+.menu-body p{
+
+  font-size: 1rem;
+  line-height: 2;
+  font-style: italic;
+
+}
